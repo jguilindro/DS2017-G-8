@@ -4,3 +4,7 @@ div #logOut{
 #cont{
 	margin-top: 5%;
 }
+
+.logout{
+	border-radius: 50%;
+}
