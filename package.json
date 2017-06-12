@@ -1,0 +1,23 @@
+{
+  "name": "ds2017-g-8",
+  "version": "1.0.0",
+  "description": "Proyecto de diseño de software de la Asosiacion de Bares y Restaurantes de la ESPOL",
+  "main": "index.js",
+  "dependencies": {
+    "vue": "^2.2.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jguilindro/DS2017-G-8.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jguilindro/DS2017-G-8/issues"
+  },
+  "homepage": "https://github.com/jguilindro/DS2017-G-8#readme"
+}
