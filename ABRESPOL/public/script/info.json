@@ -1,0 +1,34 @@
+[
+  {
+    nombre: "Neo",
+    "entrada": {
+      nombre: "Sopa de pollo",
+      precio: 0.50
+    },
+    "Fuerte":{
+      nombre: "Moro con pollo",     
+      precio: 1.50
+    },
+    "Postre":{
+      nombre: "Furta: Guineo",
+      precio: 0.50
+    },
+    "Lugar": "EDCOM",
+    "Fecha": "DATE"
+  },
+  {
+    nombre: "Carreta de Toño",
+    "entrada": {
+      nombre: null
+    },
+    "Fuerte":{
+      nombre: "Taco de pollo",
+      precio: 2
+    },
+    "Postre":{
+      nombre: null
+    },
+    "Lugar": "FCSH",
+    "Fecha": "DATE"
+  }
+]
