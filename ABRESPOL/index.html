@@ -13,6 +13,7 @@
 </head>
 <body>
 	<div class="container">
+	<div id="app">
 		<div class="mini-container">
 			<div class="linea"></div>
 			<div class="banner">
@@ -23,20 +24,23 @@
 			</div>
 			<div class="info">
 				<label>Usuario:</label>
-				<input type="text" name="user" id="user">
+				<input type="text" v-model="usuario" id="user">
 				<label>Contraseña:</label>
-				<input type="password" name="pass" id="pass">
+				<input type="password" v-model="password" id="pass">
 			</div>
 			<div class="foot center-align">
-				<button class="btn  default-btn inicio" id="inicio">Iniciar sesión</button>
+				<button class="btn  default-btn inicio" v-on:click="realizarLogin()"  id="inicio">Iniciar sesión</button>
 			</div>
 		</div>
 		<div class="linea" id="footer"></div>
+	</div>
 	</div>
 	<footer>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 		<script type="text/javascript" src="./public/script/scriptIndex.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.4/vue.min.js"></script>
+		<script type="text/javascript" src="loginScript.js"></script>
 	</footer>
 </body>
 </html>

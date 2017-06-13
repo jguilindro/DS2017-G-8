@@ -57,9 +57,13 @@ app.use('/', express.static(path.join(__dirname, './')));
 app.use('/usuario', express.static(path.join(__dirname, './user')));
 
 
-app.get('/users', function(req, res){
-mongoose.model('usuarios').find(function(err, users){
-	res.send(users);
+app.get('/login/:usuario/:password', function(req, res){
+mongoose.model('usuarios').find({username: req.params.usuario}, function(err, users){
+		if(req.params.password==users[0].password){
+			res.send(users[0].rol);
+		} else{
+			res.sendStatus(404); 
+		}
 });
 
 });

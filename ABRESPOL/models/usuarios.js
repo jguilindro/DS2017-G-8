@@ -1,5 +1,5 @@
-var mongooose= require('mongoose');
+var mongoose= require('mongoose');
 var Schema= mongoose.Schema;
 
 var usuariosSchema = new Schema({nombre: String, username: String, password: String, rol: String});
-mongoose.model('users', usuariosSchema);
+mongoose.model('usuarios', usuariosSchema);

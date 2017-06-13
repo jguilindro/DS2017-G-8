@@ -18,6 +18,9 @@
     "serve-favicon": "^2.3.2",
     "vue": "^2.3.4"
   },
+  "browser": {
+    "vue": "vue/dist/vue.common.js"
+  },
   "description": "Proyecto de diseño de software",
   "main": "app.js",
   "devDependencies": {},
