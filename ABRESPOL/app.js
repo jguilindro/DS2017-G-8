@@ -55,7 +55,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', express.static(path.join(__dirname, './')));
 app.use('/usuario', express.static(path.join(__dirname, './user')));
-
+app.use('/asistente', express.static(path.join(__dirname, './user/asistente')));
+app.use('/admin', express.static(path.join(__dirname, './user/admin')));
 
 app.get('/login/:usuario/:password', function(req, res){
 mongoose.model('usuarios').find({username: req.params.usuario}, function(err, users){

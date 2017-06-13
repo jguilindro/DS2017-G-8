@@ -16,11 +16,11 @@ var App = new Vue({
 			 success: function(res){
 			 	console.log(res);
 			 	if (res=="administrador"){
-			 		window.location="/usuario";
+			 		window.location="/admin";
 			 	}else if (res=="cliente"){
 			 		window.location="/usuario";
 			 	}else if (res=="asistente"){
-			 		window.location="/usuario";
+			 		window.location="/asistente";
 			 	}
 			 	
 			 }
