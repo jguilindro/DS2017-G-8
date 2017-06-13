@@ -5,10 +5,41 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var mongoose= require('mongoose');
+var fs= require('fs');
 var index = require('./routes/index');
 var users = require('./routes/users');
-
 var app = express();
+//string de conexion db
+var options = { server: { socketOptions: { keepAlive: 1 } } };
+var uri= 'mongodb://user:database1@ds125262.mlab.com:25262/abrespol';
+
+
+//conectar db
+mongoose.connect(uri, options);
+
+//base de datos
+var db = mongoose.connection;
+
+//conexion correcta
+mongoose.connection.on('connected', function (err) {
+  console.log("Conectado a la base de datos usando: " + uri);
+});
+
+// Error handler db
+mongoose.connection.on('error', function (err) {
+  console.log(err);
+});
+
+// Reconectar cuando se cierre db
+mongoose.connection.on('disconnected', function () {
+   self.connectToDatabase();
+});
+
+//Cargando modelos
+fs.readdirSync(__dirname + '/models').forEach(function(filename){
+	if (~filename.indexOf('.js')) require(__dirname + '/models/'+ filename);
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -25,6 +56,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', express.static(path.join(__dirname, './')));
 app.use('/usuario', express.static(path.join(__dirname, './user')));
 
+
+app.get('/users', function(req, res){
+mongoose.model('usuarios').find(function(err, users){
+	res.send(users);
+});
+
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
