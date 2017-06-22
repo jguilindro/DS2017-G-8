@@ -6,10 +6,10 @@ var App = new Vue({
   el: '#app',
   data: {
     todoElMenu: $.grep(info, function( n, i ) {
-  return n.nombre===window.location.href.toString().split('/')[4];
+  return n.nombre=== decodeURI(window.location.href.toString().split('/')[4]);
 	}),
     filteredMenu: $.grep(info, function( n, i ) {
-  return n.nombre===window.location.href.toString().split('/')[4];
+  return n.nombre=== decodeURI(window.location.href.toString().split('/')[4]);
 	}),
     facultad: "",
     textoFiltro: ""
