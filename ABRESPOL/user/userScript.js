@@ -18,7 +18,7 @@ var App = new Vue({
 });
 
 $(".logout").click(function(){
-	window.location.href = '../index.html';
+	window.location.href = '/index.html';
 })
 
 $("#categoria").change(function(){
