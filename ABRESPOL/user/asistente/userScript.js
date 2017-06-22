@@ -5,8 +5,12 @@ var App = new Vue({
   },
   el: '#app',
   data: {
-    todoElMenu: info,
-    filteredMenu: info,
+    todoElMenu: $.grep(info, function( n, i ) {
+  return n.nombre===window.location.href.toString().split('/')[4];
+	}),
+    filteredMenu: $.grep(info, function( n, i ) {
+  return n.nombre===window.location.href.toString().split('/')[4];
+	}),
     facultad: "",
     textoFiltro: ""
   },
@@ -15,6 +19,7 @@ var App = new Vue({
 	  		alert("asdasd");
 	  	}
 	}
+
 });
 
 $(".logout").click(function(){
@@ -49,4 +54,8 @@ function filter(menu){
 
 function filtrarFacultad(menu){
 	return menu.Lugar == App.facultad
+}
+
+function filtrarRestaurante(menu){
+	return menu.nombre ==  window.location.href.toString().split('/')[3];
 }

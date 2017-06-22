@@ -1,0 +1,136 @@
+info = [
+  {
+    nombre: "Neo",
+    "entrada": {
+      nombre: "Sopa de pollo",
+      precio: 0.50
+    },
+    "Fuerte":{
+      nombre: "Moro con pollo",     
+      precio: 1.50
+    },
+    "Postre":{
+      nombre: "Fruta: Guineo",
+      precio: 0.50
+    },
+    "Lugar": "EDCOM",
+    "Fecha": "7-12-2017"
+  },
+  {
+    nombre: "Carreta de Toño",
+    "entrada": {
+      nombre: ""
+    },
+    "Fuerte":{
+      nombre: "Taco de pollo",
+      precio: 2
+    },
+    "Postre":{
+      nombre: ""
+    },
+    "Lugar": "FCSH",
+    "Fecha": "7-12-2017"
+  },
+  {
+    nombre: "Comiexpress",
+    "entrada": {
+      nombre: "Caldo de pollo con Granos de arroz",
+      precio: 0.50
+    },
+    "Fuerte":{
+      nombre: "Yapingacho",     
+      precio: 1.50
+    },
+    "Postre":{
+      nombre: "Pastelería o fruta",
+      precio: 0.50
+    },
+    "Lugar": "Admisiones",
+    "Fecha": "7-12-2017"
+  },
+  {
+    nombre: "Comedor del CELEX",
+    "entrada": {
+      nombre: "Sopa de carne",
+      precio: 0.50
+    },
+    "Fuerte":{
+      nombre: "Arroz con estofado de carne",     
+      precio: 1.50
+    },
+    "Postre":{
+      nombre: "Gelatina",
+      precio: 0.50
+    },
+    "Lugar": "Celex",
+    "Fecha": "7-12-2017"
+  },
+  {
+    nombre: "Comedor principal de la FCSH",
+    "entrada": {
+      nombre: "Locro de nabo",
+      precio: 0.50
+    },
+    "Fuerte":{
+      nombre: "Estofado de pollo y maduro frito",     
+      precio: 1.50
+    },
+    "Postre":{
+      nombre: "Tamarindo",
+      precio: 0.50
+    },
+    "Lugar": "FCSH",
+    "Fecha": "7-12-2017"
+  },
+  {
+    nombre: "Comedor de la FCSH",
+    "entrada": {
+      nombre: "Sopa de pollo",
+      precio: 0.50
+    },
+    "Fuerte":{
+      nombre: "Arroz: con pollo al horno y puré",     
+      precio: 1.50
+    },
+    "Postre":{
+      nombre: "Papaya",
+      precio: 0.50
+    },
+    "Lugar": "FCSH",
+    "Fecha": "7-12-2017"
+  },
+  {
+    nombre: "Comedor de piscina",
+    "entrada": {
+      nombre: "Sancocho de hueso blanco",
+      precio: 0.50
+    },
+    "Fuerte":{
+      nombre: "Arroz con pescado frito y ensalada",     
+      precio: 1.50
+    },
+    "Postre":{
+      nombre: "",
+      precio: 0.50
+    },
+    "Lugar": "FCV",
+    "Fecha": "7-12-2017"
+  },
+  {
+    nombre: "Comedor de marítima",
+    "entrada": {
+      nombre: "",
+      precio: 0.50
+    },
+    "Fuerte":{
+      nombre: "Arroz con menestra y chancho",     
+      precio: 1.50
+    },
+    "Postre":{
+      nombre: "",
+      precio: 0.50
+    },
+    "Lugar": "FIMCBOR",
+    "Fecha": "7-12-2017"
+  }
+]

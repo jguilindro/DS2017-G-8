@@ -15,6 +15,7 @@ var options = { server: { socketOptions: { keepAlive: 1 } } };
 var uri= 'mongodb://user:database1@ds125262.mlab.com:25262/abrespol';
 
 
+
 //conectar db
 mongoose.connect(uri, options);
 
@@ -55,13 +56,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', express.static(path.join(__dirname, './')));
 app.use('/usuario', express.static(path.join(__dirname, './user')));
-app.use('/asistente', express.static(path.join(__dirname, './user/asistente')));
+app.use('/asistente/:restaurante', express.static(path.join(__dirname, './user/asistente')));
 app.use('/admin', express.static(path.join(__dirname, './user/admin')));
+
+
 
 app.get('/login/:usuario/:password', function(req, res){
 mongoose.model('usuarios').find({username: req.params.usuario}, function(err, users){
 		if(req.params.password==users[0].password){
-			res.send(users[0].rol);
+			res.send(users[0]);
 		} else{
 			res.sendStatus(404); 
 		}

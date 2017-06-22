@@ -15,12 +15,12 @@ var App = new Vue({
 			 url: urlApi,
 			 success: function(res){
 			 	console.log(res);
-			 	if (res=="administrador"){
+			 	if (res.rol=="administrador"){
 			 		window.location="/admin";
-			 	}else if (res=="cliente"){
+			 	}else if (res.rol=="cliente"){
 			 		window.location="/usuario";
-			 	}else if (res=="asistente"){
-			 		window.location="/asistente";
+			 	}else if (res.rol=="asistente"){
+			 		window.location="/asistente/"+res.restaurante;
 			 	}
 			 	
 			 }
