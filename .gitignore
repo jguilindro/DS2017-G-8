@@ -1,1 +1,10 @@
 /ABRESPOL/node_modules
+/ABRESPOL/nbproject/private/
+/OO/ABRESPOL/ABRESPOL/obj/Debug
+
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
