@@ -88,6 +88,15 @@
     <Compile Include="PlatoBuilder.cs" />
     <Compile Include="Plato.cs" />
     <Compile Include="PlatoDirector.cs" />
+    <Compile Include="Facade.cs" />
+    <Compile Include="PagarPorCarnet.cs" />
+    <Compile Include="PagarPorCredito.cs" />
+    <Compile Include="Persona.cs" />
+    <Compile Include="Asistente.cs" />
+    <Compile Include="Usuario.cs" />
+    <Compile Include="Administrador.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="Platillo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
