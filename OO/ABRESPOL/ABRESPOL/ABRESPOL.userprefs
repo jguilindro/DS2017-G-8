@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{F79CDBF2-9DFF-4AEC-9F94-8D61DCC0F7E3}|Default">
+  <MonoDevelop.Ide.ItemProperties.ABRESPOL PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmptyClass.cs">
+    <Files>
+      <File FileName="Restaurante.cs" Line="14" Column="9" />
+      <File FileName="PagosDecorator.cs" Line="11" Column="1" />
+      <File FileName="Pagos.cs" Line="16" Column="16" />
+      <File FileName="CarnetDecorator.cs" Line="24" Column="1" />
+      <File FileName="CreditCardDecorator.cs" Line="12" Column="10" />
+      <File FileName="Ejecutivo.cs" Line="17" Column="6" />
+      <File FileName="Estudiantil.cs" Line="10" Column="9" />
+      <File FileName="EjecutivoDecorator.cs" Line="5" Column="6" />
+      <File FileName="JugoDecorator.cs" Line="15" Column="10" />
+      <File FileName="PostreDecorator.cs" Line="13" Column="9" />
+      <File FileName="PlatoBuilder.cs" Line="6" Column="25" />
+      <File FileName="Plato.cs" Line="9" Column="9" />
+      <File FileName="EmptyClass.cs" Line="6" Column="18" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
