@@ -13,9 +13,11 @@ namespace ABRESPOL
         {}
 
         public PlatoDirector getPlato()
-        {}
+        {
+            return null;
+        }
 
-        public void PlatoDirector(PlatoBuilder builder)
+        public void platoDirector(PlatoBuilder builder)
         {}
     }
 }
