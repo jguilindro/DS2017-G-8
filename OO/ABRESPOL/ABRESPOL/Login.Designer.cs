@@ -35,16 +35,18 @@
             this.passwordTextbox = new System.Windows.Forms.TextBox();
             this.logButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.logoWhite = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(34)))), ((int)(((byte)(63)))));
-            this.panel1.Location = new System.Drawing.Point(-2, -3);
+            this.panel1.Location = new System.Drawing.Point(-11, -3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(690, 21);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // userTextbox
             // 
@@ -97,6 +99,7 @@
             this.logButton.TabIndex = 5;
             this.logButton.Text = "Iniciar sesión";
             this.logButton.UseVisualStyleBackColor = false;
+            this.logButton.Click += new System.EventHandler(this.logButton_Click);
             // 
             // label1
             // 
@@ -108,21 +111,30 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "ABRESPOL";
             // 
-            // label2
+            // logoWhite
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "label2";
+            this.logoWhite.Image = global::ABRESPOL.Properties.Resources.dark_logo;
+            this.logoWhite.Location = new System.Drawing.Point(105, 33);
+            this.logoWhite.Name = "logoWhite";
+            this.logoWhite.Size = new System.Drawing.Size(129, 110);
+            this.logoWhite.TabIndex = 7;
+            this.logoWhite.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(34)))), ((int)(((byte)(63)))));
+            this.panel2.Location = new System.Drawing.Point(-2, 558);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(690, 10);
+            this.panel2.TabIndex = 1;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 569);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(673, 569);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.logoWhite);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.logButton);
             this.Controls.Add(this.password);
@@ -130,8 +142,11 @@
             this.Controls.Add(this.User);
             this.Controls.Add(this.userTextbox);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,7 +161,8 @@
         private System.Windows.Forms.TextBox passwordTextbox;
         private System.Windows.Forms.Button logButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label logoWhite;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 

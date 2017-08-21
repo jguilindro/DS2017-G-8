@@ -41,5 +41,27 @@ namespace ABRESPOL
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logButton_Click(object sender, EventArgs e)
+        {
+            StudentMain estudiante = new StudentMain();
+            estudiante.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
