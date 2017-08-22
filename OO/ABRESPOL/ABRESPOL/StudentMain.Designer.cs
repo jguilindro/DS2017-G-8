@@ -38,15 +38,19 @@ namespace ABRESPOL
             this.Title = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.FacultadImg = new System.Windows.Forms.Panel();
+            this.menuPanel = new System.Windows.Forms.Panel();
+            this.menuLabel = new System.Windows.Forms.Label();
             this.Facultad = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-
-            this.restaurant = new System.Collections.Generic.List<Restaurant>();
-            this.panelComida = new System.Collections.Generic.List<System.Windows.Forms.Panel>();
-
+            this.ejecutivoLabel = new System.Windows.Forms.Label();
+            this.estudiantilLabel = new System.Windows.Forms.Label();
+            this.flowEjecutivoPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowEstudiantilPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.FacultadImg.SuspendLayout();
+            this.menuPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,19 +71,6 @@ namespace ABRESPOL
             this.FlowMenuLayout.Size = new System.Drawing.Size(426, 725);
             this.FlowMenuLayout.TabIndex = 0;
             this.FlowMenuLayout.WrapContents = false;
-            // 
-            // Agregando paneles automáticos en vista.
-            // 
-            restaurant.Add(new Restaurant("Malicia", Properties.Resources.malicia));
-            restaurant.Add(new Restaurant("Lo mejor de lo nuestro", Properties.Resources.rectorado));
-            restaurant.Add(new Restaurant("Frutang", Properties.Resources.malicia));
-            restaurant.Add(new Restaurant("Neo", Properties.Resources.malicia));
-            restaurant.Add(new Restaurant("Coke-Cola", Properties.Resources.malicia));
-            restaurant.Add(new Restaurant("comedor FCSH", Properties.Resources.malicia));
-
-            foreach (Restaurant rest in restaurant) {
-                FlowMenuLayout.Controls.Add(crearLabel(rest));
-            }
             // 
             // panel2
             // 
@@ -114,12 +105,40 @@ namespace ABRESPOL
             // 
             this.FacultadImg.BackgroundImage = global::ABRESPOL.Properties.Resources.rectorado;
             this.FacultadImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.FacultadImg.Controls.Add(this.menuPanel);
             this.FacultadImg.Controls.Add(this.Facultad);
             this.FacultadImg.Controls.Add(this.panel3);
             this.FacultadImg.Location = new System.Drawing.Point(424, 142);
             this.FacultadImg.Name = "FacultadImg";
-            this.FacultadImg.Size = new System.Drawing.Size(1146, 699);
+            this.FacultadImg.Size = new System.Drawing.Size(1162, 699);
             this.FacultadImg.TabIndex = 2;
+            this.FacultadImg.Paint += new System.Windows.Forms.PaintEventHandler(this.FacultadImg_Paint);
+            // 
+            // menuPanel
+            // 
+            this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))), ((int)(((byte)(63)))));
+            this.menuPanel.Controls.Add(this.button1);
+            this.menuPanel.Controls.Add(this.flowEstudiantilPanel);
+            this.menuPanel.Controls.Add(this.flowEjecutivoPanel);
+            this.menuPanel.Controls.Add(this.estudiantilLabel);
+            this.menuPanel.Controls.Add(this.ejecutivoLabel);
+            this.menuPanel.Controls.Add(this.menuLabel);
+            this.menuPanel.Location = new System.Drawing.Point(8, 400);
+            this.menuPanel.Name = "menuPanel";
+            this.menuPanel.Size = new System.Drawing.Size(1138, 299);
+            this.menuPanel.TabIndex = 2;
+            // 
+            // menuLabel
+            // 
+            this.menuLabel.AutoSize = true;
+            this.menuLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.menuLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuLabel.ForeColor = System.Drawing.Color.White;
+            this.menuLabel.Location = new System.Drawing.Point(56, 31);
+            this.menuLabel.Name = "menuLabel";
+            this.menuLabel.Size = new System.Drawing.Size(102, 39);
+            this.menuLabel.TabIndex = 0;
+            this.menuLabel.Text = "Menú";
             // 
             // Facultad
             // 
@@ -142,6 +161,55 @@ namespace ABRESPOL
             this.panel3.Size = new System.Drawing.Size(1082, 81);
             this.panel3.TabIndex = 1;
             // 
+            // ejecutivoLabel
+            // 
+            this.ejecutivoLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ejecutivoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ejecutivoLabel.ForeColor = System.Drawing.Color.White;
+            this.ejecutivoLabel.Location = new System.Drawing.Point(56, 85);
+            this.ejecutivoLabel.Name = "ejecutivoLabel";
+            this.ejecutivoLabel.Size = new System.Drawing.Size(436, 51);
+            this.ejecutivoLabel.TabIndex = 1;
+            this.ejecutivoLabel.Text = "Plato Ejecutivo";
+            // 
+            // estudiantilLabel
+            // 
+            this.estudiantilLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.estudiantilLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estudiantilLabel.ForeColor = System.Drawing.Color.White;
+            this.estudiantilLabel.Location = new System.Drawing.Point(582, 85);
+            this.estudiantilLabel.Name = "estudiantilLabel";
+            this.estudiantilLabel.Size = new System.Drawing.Size(436, 51);
+            this.estudiantilLabel.TabIndex = 2;
+            this.estudiantilLabel.Text = "Plato Estudiantil";
+            // 
+            // flowEjecutivoPanel
+            // 
+            this.flowEjecutivoPanel.Location = new System.Drawing.Point(63, 139);
+            this.flowEjecutivoPanel.Name = "flowEjecutivoPanel";
+            this.flowEjecutivoPanel.Size = new System.Drawing.Size(487, 157);
+            this.flowEjecutivoPanel.TabIndex = 3;
+            // 
+            // flowEstudiantilPanel
+            // 
+            this.flowEstudiantilPanel.Location = new System.Drawing.Point(604, 139);
+            this.flowEstudiantilPanel.Name = "flowEstudiantilPanel";
+            this.flowEstudiantilPanel.Size = new System.Drawing.Size(487, 157);
+            this.flowEstudiantilPanel.TabIndex = 4;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(34)))), ((int)(((byte)(63)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(885, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(177, 44);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "¡Comprar!";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // StudentMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -152,11 +220,16 @@ namespace ABRESPOL
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.Name = "StudentMain";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudentMain";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.StudentMain_FormClosed);
+            this.Load += new System.EventHandler(this.StudentMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.FacultadImg.ResumeLayout(false);
+            this.menuPanel.ResumeLayout(false);
+            this.menuPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -171,40 +244,12 @@ namespace ABRESPOL
         private System.Windows.Forms.Panel FacultadImg;
         private System.Windows.Forms.Label Facultad;
         private System.Windows.Forms.Panel panel3;
-
-        private System.Collections.Generic.List<Restaurant> restaurant;
-        private System.Collections.Generic.List<System.Windows.Forms.Panel> panelComida;
-        void panelClickHandler(object sender, EventArgs e, Bitmap image)
-        {
-            Console.Write("ads");
-            FacultadImg.BackgroundImage = image;
-        }
-        private System.Windows.Forms.Label crearLabel(Restaurant rest) {
-            System.Windows.Forms.Label titulo = new System.Windows.Forms.Label();
-            titulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))), ((int)(((byte)(63)))));
-            titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            titulo.ForeColor = System.Drawing.Color.White;
-            titulo.Name = rest.getNombre() + "-restaurant";
-            titulo.Size = new System.Drawing.Size(420, 75);
-            titulo.TabIndex = 0;
-            titulo.Text = rest.getNombre() ;
-            titulo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            //
-            //Events right here
-            //
-            titulo.Click += (sender, e) => { panelClickHandler(sender, e, rest.getImagen()); };
-            titulo.MouseEnter += (sender, e) => { Titulo_MouseEnter(sender, e, titulo); };
-            titulo.MouseLeave += (sender, e) => { Titulo_MouseLeave(sender, e, titulo); };
-            return titulo;
-        }
-
-        private void Titulo_MouseEnter(object sender, EventArgs e, System.Windows.Forms.Label titulo){
-            this.Cursor = Cursors.Hand;
-            titulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))), ((int)(((byte)(63)))));
-        }
-        private void Titulo_MouseLeave(object sender, EventArgs e, System.Windows.Forms.Label titulo) {
-            this.Cursor = Cursors.Default;
-            titulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))), ((int)(((byte)(63)))));
-        }
+        private Panel menuPanel;
+        private Label menuLabel;
+        private FlowLayoutPanel flowEstudiantilPanel;
+        private FlowLayoutPanel flowEjecutivoPanel;
+        private Label estudiantilLabel;
+        private Label ejecutivoLabel;
+        private Button button1;
     }
 }
