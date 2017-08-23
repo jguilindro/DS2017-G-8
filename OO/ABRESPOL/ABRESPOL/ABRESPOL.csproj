@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="comida.cs" />
+    <Compile Include="ComprarVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComprarVista.Designer.cs">
+      <DependentUpon>ComprarVista.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="StudentMain.Designer.cs">
       <DependentUpon>StudentMain.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ComprarVista.resx">
+      <DependentUpon>ComprarVista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
