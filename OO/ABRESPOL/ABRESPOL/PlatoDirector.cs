@@ -5,19 +5,26 @@ namespace ABRESPOL
     {
         private PlatoBuilder builder;
 
-        public PlatoDirector()
-        {
-        }
 
-        public void construirPlato()
-        {}
+        public void construirPlato(String nombre, String descripcion, float precio, String servido, String tipo, int idCategoria, int idPlatillo, int idRestaurante)
+        {
+            this.builder.añadirInformacion(nombre, descripcion, precio, servido, tipo);
+            this.builder.añadirIds(idCategoria, idPlatillo, idRestaurante);
+        }
 
         public PlatoDirector getPlato()
         {
             return null;
         }
 
-        public void platoDirector(PlatoBuilder builder)
-        {}
+        public void setPlatoBuilder(PlatoBuilder builder)
+        {
+            this.builder = builder;
+        }
+
+        public Platillo getPlatillo()
+        {
+            return this.builder.getPlatillo();
+        }
     }
 }
