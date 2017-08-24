@@ -8,9 +8,8 @@ namespace ABRESPOL
         private String descripcion;
         private String servido;
         private String tipo;
-        private int idCategoria;
-        private int idRestaurante;
-        private int idPlatillo;
+        private String categoria;
+        private String restaurante;
 
         public string Nombre
         {
@@ -77,44 +76,32 @@ namespace ABRESPOL
             }
         }
 
-        public int IdCategoria
+        public String Categoria
         {
             get
             {
-                return idCategoria;
+                return categoria;
             }
 
             set
             {
-                idCategoria = value;
+                categoria = value;
             }
         }
 
-        public int IdRestaurante
+        public String Restaurante
         {
             get
             {
-                return idRestaurante;
+                return restaurante;
             }
 
             set
             {
-                idRestaurante = value;
+               restaurante = value;
             }
         }
 
-        public int IdPlatillo
-        {
-            get
-            {
-                return idPlatillo;
-            }
-
-            set
-            {
-                idPlatillo = value;
-            }
-        }
 
         public void modificarPlatillo(){
 
