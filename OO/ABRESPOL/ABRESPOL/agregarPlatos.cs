@@ -21,5 +21,22 @@ namespace ABRESPOL
         {
             this.Dispose();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PlatilloDirector director = new PlatilloDirector();
+            PlatilloBuilder builder = new PlatilloBuilder();
+            director.setPlatoBuilder(builder);
+            director.construirPlato(textNombre.Text, descripcionBox.Text, float.Parse(textPrecio.Text), servidoBox.Text, tipoBox.Text, categoriasBox.Text, restaurantBox.Text);
+
+            StudentMain.platos.Add(director.getPlatillo());
+        }
+
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
