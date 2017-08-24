@@ -21,5 +21,12 @@ namespace ABRESPOL
         {
             this.Dispose();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Restaurante restaurante = new Restaurante(textNombre.Text, duenoText.Text, direccionText.Text, radioYes.Checked);
+            Program.restaurantes.Add(restaurante);
+            this.Dispose();
+        }
     }
 }

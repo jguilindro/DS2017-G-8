@@ -13,6 +13,7 @@ namespace ABRESPOL
         /// The main entry point for the application.
         /// </summary>
         public static List<Platillo> platos = new List<Platillo>();
+        public static List<Restaurante> restaurantes = new List<Restaurante>();
         public static Persona persona = new Persona("","","");
         [STAThread]
         static void Main(string[] args)
