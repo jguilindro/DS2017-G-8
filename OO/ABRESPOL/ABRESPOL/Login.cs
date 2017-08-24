@@ -57,7 +57,7 @@ namespace ABRESPOL
             bool enter = false;
             if (userTextbox.Text.ToLower() == "jamytafy" && passwordTextbox.Text == "123") {
                 Jamytafy jamy = new Jamytafy();
-                jamy.Show();
+                jamy.ShowDialog();
                 enter = true;
             }
             //
@@ -72,6 +72,22 @@ namespace ABRESPOL
             //Si es admin o asistente
             //
             if(userTextbox.Text.ToLower() == "admin" && passwordTextbox.Text == "123"){
+                Program.persona.Username = "admin";
+                Program.persona.Password = "123";
+                Program.persona.Rol = "Administrador";
+                Program.persona.IdRestaurante = "";
+
+                AssitMain asistente = new AssitMain();
+                asistente.Show();
+                enter = true;
+            }
+            if (userTextbox.Text.ToLower() == "asist" && passwordTextbox.Text == "123")
+            {
+                Program.persona.Username        =   "asist";
+                Program.persona.Password        =   "123";
+                Program.persona.Rol             =   "Ejecutivo";
+                Program.persona.IdRestaurante   =   "Malicia";
+
                 AssitMain asistente = new AssitMain();
                 asistente.Show();
                 enter = true;
