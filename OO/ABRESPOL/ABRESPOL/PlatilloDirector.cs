@@ -6,9 +6,10 @@ namespace ABRESPOL
         private PlatilloBuilder builder;
 
 
-        public void construirPlato(String nombre, String descripcion, float precio, String servido, String tipo, String categoria, String restaurante)
+        public void construirPlato(String nombre, String descripcion, float precio, String servido, String tipo, int idCategoria, int idPlatillo, int idRestaurante)
         {
-            this.builder.crearPlatillo(nombre, descripcion, precio, servido, tipo, categoria, restaurante);
+            this.builder.añadirInformacion(nombre, descripcion, precio, servido, tipo);
+            this.builder.añadirIds(idCategoria, idPlatillo, idRestaurante);
         }
 
         public void setPlatoBuilder(PlatilloBuilder builder)

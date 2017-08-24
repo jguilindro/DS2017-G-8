@@ -13,20 +13,11 @@ namespace ABRESPOL
     public partial class StudentMain : Form
     {
         private List<Platillo> platos = new List<Platillo>();
-  
 
         public StudentMain()
         {
             InitializeComponent();
             OwnInitializeComponent();
-
-            PlatilloDirector director = new PlatilloDirector();
-            PlatilloBuilder arrozCarneBuilder = new PlatilloBuilder();
-            director.setPlatoBuilder(arrozCarneBuilder);
-            director.construirPlato("Arroz con carne", "Rico arroz con carne frita yum :9", 2.5F, "Caliente", "Segundo", "Ejecutivo", "Malicia");
-     
-            platos.Add(director.getPlatillo());
-
         }
         private void OwnInitializeComponent() {
             this.restaurant = new System.Collections.Generic.List<Restaurant>();
