@@ -12,6 +12,8 @@ namespace ABRESPOL
 {
     public partial class StudentMain : Form
     {
+        private List<Platillo> platos = new List<Platillo>();
+
         public StudentMain()
         {
             InitializeComponent();
@@ -19,7 +21,7 @@ namespace ABRESPOL
         }
         private void OwnInitializeComponent() {
             this.restaurant = new System.Collections.Generic.List<Restaurant>();
-            this.panelComida = new System.Collections.Generic.List<System.Windows.Forms.Panel>();
+            this.panelComida = new List<Panel>();            
 
             // 
             // Agregando paneles automáticos en vista.
@@ -44,6 +46,7 @@ namespace ABRESPOL
             //Aquí habrá el evento cuando clické algún restaurant. La imagen e pondrá el de la facultad.
             FacultadImg.BackgroundImage = rest.getImagen();
             this.Facultad.Text = rest.getNombre();
+            //Busco los platos por el nombre de restaurante.
         }
         private System.Windows.Forms.Label crearLabel(Restaurant rest)
         {
