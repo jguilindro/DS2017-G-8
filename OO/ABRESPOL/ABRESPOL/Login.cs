@@ -54,9 +54,11 @@ namespace ABRESPOL
 
         private void logButton_Click(object sender, EventArgs e)
         {
+            bool enter = false;
             if (userTextbox.Text.ToLower() == "jamytafy" && passwordTextbox.Text == "123") {
                 Jamytafy jamy = new Jamytafy();
                 jamy.Show();
+                enter = true;
             }
             //
             //Si es un estudiante
@@ -64,6 +66,7 @@ namespace ABRESPOL
             if (userTextbox.Text.ToLower() == "user" && passwordTextbox.Text == "123") {
                 StudentMain estudiante = new StudentMain();
                 estudiante.Show();
+                enter = true;
             }
             //
             //Si es admin o asistente
@@ -71,9 +74,14 @@ namespace ABRESPOL
             if(userTextbox.Text.ToLower() == "admin" && passwordTextbox.Text == "123"){
                 AssitMain asistente = new AssitMain();
                 asistente.Show();
+                enter = true;
             }
-
-            this.Hide();
+            if (enter)
+            {
+                this.Hide();
+            }
+            else
+                Console.WriteLine("EEERRROOOR");
         }
 
         private void label2_Click(object sender, EventArgs e)
