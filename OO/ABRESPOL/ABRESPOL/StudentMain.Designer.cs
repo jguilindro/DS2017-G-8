@@ -39,14 +39,16 @@ namespace ABRESPOL
             this.label1 = new System.Windows.Forms.Label();
             this.FacultadImg = new System.Windows.Forms.Panel();
             this.menuPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.flowEstudiantilPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowEjecutivoPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.estudiantilLabel = new System.Windows.Forms.Label();
+            this.ejecutivoLabel = new System.Windows.Forms.Label();
             this.menuLabel = new System.Windows.Forms.Label();
             this.Facultad = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.ejecutivoLabel = new System.Windows.Forms.Label();
-            this.estudiantilLabel = new System.Windows.Forms.Label();
-            this.flowEjecutivoPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowEstudiantilPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.flowEjecutivoPrecio = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.FacultadImg.SuspendLayout();
@@ -118,6 +120,8 @@ namespace ABRESPOL
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))), ((int)(((byte)(63)))));
+            this.menuPanel.Controls.Add(this.flowLayoutPanel2);
+            this.menuPanel.Controls.Add(this.flowEjecutivoPrecio);
             this.menuPanel.Controls.Add(this.button1);
             this.menuPanel.Controls.Add(this.flowEstudiantilPanel);
             this.menuPanel.Controls.Add(this.flowEjecutivoPanel);
@@ -128,6 +132,55 @@ namespace ABRESPOL
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.Size = new System.Drawing.Size(1138, 299);
             this.menuPanel.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(34)))), ((int)(((byte)(63)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(885, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(177, 44);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "¡Comprar!";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // flowEstudiantilPanel
+            // 
+            this.flowEstudiantilPanel.Location = new System.Drawing.Point(604, 139);
+            this.flowEstudiantilPanel.Name = "flowEstudiantilPanel";
+            this.flowEstudiantilPanel.Size = new System.Drawing.Size(395, 157);
+            this.flowEstudiantilPanel.TabIndex = 4;
+            // 
+            // flowEjecutivoPanel
+            // 
+            this.flowEjecutivoPanel.Location = new System.Drawing.Point(63, 139);
+            this.flowEjecutivoPanel.Name = "flowEjecutivoPanel";
+            this.flowEjecutivoPanel.Size = new System.Drawing.Size(349, 157);
+            this.flowEjecutivoPanel.TabIndex = 3;
+            // 
+            // estudiantilLabel
+            // 
+            this.estudiantilLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.estudiantilLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estudiantilLabel.ForeColor = System.Drawing.Color.White;
+            this.estudiantilLabel.Location = new System.Drawing.Point(582, 85);
+            this.estudiantilLabel.Name = "estudiantilLabel";
+            this.estudiantilLabel.Size = new System.Drawing.Size(436, 51);
+            this.estudiantilLabel.TabIndex = 2;
+            this.estudiantilLabel.Text = "Plato Estudiantil";
+            // 
+            // ejecutivoLabel
+            // 
+            this.ejecutivoLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ejecutivoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ejecutivoLabel.ForeColor = System.Drawing.Color.White;
+            this.ejecutivoLabel.Location = new System.Drawing.Point(56, 85);
+            this.ejecutivoLabel.Name = "ejecutivoLabel";
+            this.ejecutivoLabel.Size = new System.Drawing.Size(436, 51);
+            this.ejecutivoLabel.TabIndex = 1;
+            this.ejecutivoLabel.Text = "Plato Ejecutivo";
             // 
             // menuLabel
             // 
@@ -162,54 +215,19 @@ namespace ABRESPOL
             this.panel3.Size = new System.Drawing.Size(1082, 81);
             this.panel3.TabIndex = 1;
             // 
-            // ejecutivoLabel
+            // flowEjecutivoPrecio
             // 
-            this.ejecutivoLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ejecutivoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ejecutivoLabel.ForeColor = System.Drawing.Color.White;
-            this.ejecutivoLabel.Location = new System.Drawing.Point(56, 85);
-            this.ejecutivoLabel.Name = "ejecutivoLabel";
-            this.ejecutivoLabel.Size = new System.Drawing.Size(436, 51);
-            this.ejecutivoLabel.TabIndex = 1;
-            this.ejecutivoLabel.Text = "Plato Ejecutivo";
+            this.flowEjecutivoPrecio.Location = new System.Drawing.Point(410, 139);
+            this.flowEjecutivoPrecio.Name = "flowEjecutivoPrecio";
+            this.flowEjecutivoPrecio.Size = new System.Drawing.Size(126, 157);
+            this.flowEjecutivoPrecio.TabIndex = 4;
             // 
-            // estudiantilLabel
+            // flowLayoutPanel2
             // 
-            this.estudiantilLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.estudiantilLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estudiantilLabel.ForeColor = System.Drawing.Color.White;
-            this.estudiantilLabel.Location = new System.Drawing.Point(582, 85);
-            this.estudiantilLabel.Name = "estudiantilLabel";
-            this.estudiantilLabel.Size = new System.Drawing.Size(436, 51);
-            this.estudiantilLabel.TabIndex = 2;
-            this.estudiantilLabel.Text = "Plato Estudiantil";
-            // 
-            // flowEjecutivoPanel
-            // 
-            this.flowEjecutivoPanel.Location = new System.Drawing.Point(63, 139);
-            this.flowEjecutivoPanel.Name = "flowEjecutivoPanel";
-            this.flowEjecutivoPanel.Size = new System.Drawing.Size(487, 157);
-            this.flowEjecutivoPanel.TabIndex = 3;
-            // 
-            // flowEstudiantilPanel
-            // 
-            this.flowEstudiantilPanel.Location = new System.Drawing.Point(604, 139);
-            this.flowEstudiantilPanel.Name = "flowEstudiantilPanel";
-            this.flowEstudiantilPanel.Size = new System.Drawing.Size(487, 157);
-            this.flowEstudiantilPanel.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(34)))), ((int)(((byte)(63)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(885, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(177, 44);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "¡Comprar!";
-            this.button1.UseVisualStyleBackColor = false;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(994, 139);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(120, 157);
+            this.flowLayoutPanel2.TabIndex = 5;
             // 
             // StudentMain
             // 
@@ -252,5 +270,7 @@ namespace ABRESPOL
         private Label estudiantilLabel;
         private Label ejecutivoLabel;
         private Button button1;
+        private FlowLayoutPanel flowLayoutPanel2;
+        private FlowLayoutPanel flowEjecutivoPrecio;
     }
 }
