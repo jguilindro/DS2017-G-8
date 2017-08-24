@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="agregarPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarPersona.Designer.cs">
+      <DependentUpon>agregarPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssitMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssitMain.Designer.cs">
+      <DependentUpon>AssitMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="comida.cs" />
     <Compile Include="ComprarVista.cs">
       <SubType>Form</SubType>
@@ -68,6 +80,12 @@
     <Compile Include="StudentMain.Designer.cs">
       <DependentUpon>StudentMain.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="agregarPersona.resx">
+      <DependentUpon>agregarPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssitMain.resx">
+      <DependentUpon>AssitMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ComprarVista.resx">
       <DependentUpon>ComprarVista.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +175,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fcsh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_blue.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

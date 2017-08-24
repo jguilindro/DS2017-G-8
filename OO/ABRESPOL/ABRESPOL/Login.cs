@@ -54,8 +54,10 @@ namespace ABRESPOL
 
         private void logButton_Click(object sender, EventArgs e)
         {
-            StudentMain estudiante = new StudentMain();
-            estudiante.Show();
+            //StudentMain estudiante = new StudentMain();
+            //estudiante.Show();
+            AssitMain asistente = new AssitMain();
+            asistente.Show();
             this.Hide();
         }
 
