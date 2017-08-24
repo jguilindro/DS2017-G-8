@@ -13,6 +13,7 @@ namespace ABRESPOL
         private int idPlatillo { get; set; }
 
 
+
         public void modificarPlatillo(){
 
         }

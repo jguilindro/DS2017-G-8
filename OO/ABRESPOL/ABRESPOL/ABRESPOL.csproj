@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="agregarPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarPersona.Designer.cs">
+      <DependentUpon>agregarPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agregarPlatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarPlatos.Designer.cs">
+      <DependentUpon>agregarPlatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssitMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssitMain.Designer.cs">
+      <DependentUpon>AssitMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="comida.cs" />
     <Compile Include="ComprarVista.cs">
       <SubType>Form</SubType>
@@ -68,6 +86,15 @@
     <Compile Include="StudentMain.Designer.cs">
       <DependentUpon>StudentMain.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="agregarPersona.resx">
+      <DependentUpon>agregarPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregarPlatos.resx">
+      <DependentUpon>agregarPlatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssitMain.resx">
+      <DependentUpon>AssitMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ComprarVista.resx">
       <DependentUpon>ComprarVista.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +145,9 @@
     <Compile Include="Administrador.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Platillo.cs" />
+    <Compile Include="BORRRAR.cs" />
+    <Compile Include="LectorPlatillo.cs" />
+    <None Include="Resources\usuario.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -154,6 +184,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fcsh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnet.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jugo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persona.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plato.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\postre.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurantes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarjetaCredito.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

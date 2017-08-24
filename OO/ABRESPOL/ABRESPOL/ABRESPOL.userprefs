@@ -1,9 +1,8 @@
 ﻿<Properties StartupConfiguration="{F79CDBF2-9DFF-4AEC-9F94-8D61DCC0F7E3}|Default">
   <MonoDevelop.Ide.ItemProperties.ABRESPOL PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Platillo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Properties/Resources.resx">
     <Files>
-      <File FileName="Restaurante.cs" Line="10" Column="9" />
-      <File FileName="PagosDecorator.cs" Line="8" Column="1" />
+      <File FileName="Restaurante.cs" Line="10" Column="2" />
       <File FileName="Pagos.cs" Line="2" Column="19" />
       <File FileName="CarnetDecorator.cs" Line="11" Column="1" />
       <File FileName="CreditCardDecorator.cs" Line="12" Column="10" />
@@ -12,20 +11,24 @@
       <File FileName="EjecutivoDecorator.cs" Line="5" Column="6" />
       <File FileName="JugoDecorator.cs" Line="11" Column="1" />
       <File FileName="PostreDecorator.cs" Line="11" Column="1" />
-      <File FileName="PlatoBuilder.cs" Line="9" Column="10" />
-      <File FileName="Plato.cs" Line="13" Column="9" />
+      <File FileName="PlatoBuilder.cs" Line="9" Column="6" />
+      <File FileName="Plato.cs" Line="11" Column="1" />
       <File FileName="Facade.cs" Line="9" Column="17" />
       <File FileName="PagarPorCarnet.cs" Line="1" Column="1" />
       <File FileName="PagarPorCredito.cs" Line="1" Column="1" />
       <File FileName="Aplicacion.cs" Line="1" Column="1" />
       <File FileName="Persona.cs" Line="10" Column="1" />
-      <File FileName="Asistente.cs" Line="4" Column="28" />
-      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Asistente.cs" Line="4" Column="27" />
+      <File FileName="Program.cs" Line="23" Column="33" />
       <File FileName="Usuario.cs" Line="1" Column="1" />
-      <File FileName="Administrador.cs" Line="10" Column="49" />
-      <File FileName="Menu.cs" Line="15" Column="1" />
+      <File FileName="Administrador.cs" Line="10" Column="2" />
+      <File FileName="Menu.cs" Line="11" Column="1" />
       <File FileName="PlatoDirector.cs" Line="13" Column="11" />
-      <File FileName="Platillo.cs" Line="6" Column="27" />
+      <File FileName="Platillo.cs" Line="7" Column="23" />
+      <File FileName="StudentMain.cs" Line="1" Column="1" />
+      <File FileName="BORRRAR.cs" Line="1" Column="1" />
+      <File FileName="LectorPlatillo.cs" Line="25" Column="86" />
+      <File FileName="Properties/Resources.resx" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -63,6 +63,25 @@ namespace ABRESPOL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_blue {
+            get {
+                object obj = ResourceManager.GetObject("add_blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Freire.
+        /// </summary>
+        internal static string carnet {
+            get {
+                return ResourceManager.GetString("carnet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dark_logo {
             get {
                 object obj = ResourceManager.GetObject("dark-logo", resourceCulture);
@@ -121,6 +140,15 @@ namespace ABRESPOL.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Jvrv.
+        /// </summary>
+        internal static string jugo {
+            get {
+                return ResourceManager.GetString("jugo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap logo {
@@ -141,12 +169,71 @@ namespace ABRESPOL.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dennie.
+        /// </summary>
+        internal static string persona {
+            get {
+                return ResourceManager.GetString("persona", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cj ked.
+        /// </summary>
+        internal static string plato {
+            get {
+                return ResourceManager.GetString("plato", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fvfrvr.
+        /// </summary>
+        internal static string postre {
+            get {
+                return ResourceManager.GetString("postre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap rectorado {
             get {
                 object obj = ResourceManager.GetObject("rectorado", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restaurantes .
+        /// </summary>
+        internal static string restaurantes {
+            get {
+                return ResourceManager.GetString("restaurantes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vrfvrfrf
+        ///.
+        /// </summary>
+        internal static string tarjetaCredito {
+            get {
+                return ResourceManager.GetString("tarjetaCredito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to fman, fran123
+        ///
+        ///dguizado, denise123
+        ///
+        ///Montero, maribel123.
+        /// </summary>
+        internal static string usuario {
+            get {
+                return ResourceManager.GetString("usuario", resourceCulture);
             }
         }
     }
