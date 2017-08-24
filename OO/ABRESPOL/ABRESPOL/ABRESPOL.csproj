@@ -118,6 +118,9 @@
     <Compile Include="Administrador.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Platillo.cs" />
+    <Compile Include="BORRRAR.cs" />
+    <Compile Include="LectorPlatillo.cs" />
+    <None Include="Resources\usuario.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -3,10 +3,10 @@ namespace ABRESPOL
 {
     public class Platillo
     {
-        private String nombre;
-        private float preico;
-        private String descripcion;
-        private String img;
+        public String nombre;
+        public string  precio;
+        public String descripcion;
+        public String img;
 
         public Platillo()
         {
