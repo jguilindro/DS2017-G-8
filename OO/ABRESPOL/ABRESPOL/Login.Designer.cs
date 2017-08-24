@@ -147,6 +147,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Login_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnter);
             this.ResumeLayout(false);
             this.PerformLayout();
 

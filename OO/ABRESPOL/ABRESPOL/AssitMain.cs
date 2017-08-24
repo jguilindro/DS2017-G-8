@@ -34,5 +34,11 @@ namespace ABRESPOL
             agregarPlatos platos = new agregarPlatos();
             platos.ShowDialog();
         }
+
+        private void agregarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            agregarRestaurant rest = new agregarRestaurant();
+            rest.ShowDialog();
+        }
     }
 }
