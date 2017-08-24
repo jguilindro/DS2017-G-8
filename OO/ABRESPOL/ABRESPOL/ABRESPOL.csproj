@@ -52,6 +52,12 @@
     <Compile Include="agregarPersona.Designer.cs">
       <DependentUpon>agregarPersona.cs</DependentUpon>
     </Compile>
+    <Compile Include="agregarPlatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarPlatos.Designer.cs">
+      <DependentUpon>agregarPlatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="AssitMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,9 @@
     </Compile>
     <EmbeddedResource Include="agregarPersona.resx">
       <DependentUpon>agregarPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregarPlatos.resx">
+      <DependentUpon>agregarPlatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AssitMain.resx">
       <DependentUpon>AssitMain.cs</DependentUpon>

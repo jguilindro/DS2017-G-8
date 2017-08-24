@@ -28,5 +28,11 @@ namespace ABRESPOL
         {
 
         }
+        
+        private void agregarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            agregarPlatos platos = new agregarPlatos();
+            platos.ShowDialog();
+        }
     }
 }

@@ -30,6 +30,7 @@ namespace ABRESPOL
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.FlowMenuLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -47,10 +48,24 @@ namespace ABRESPOL
             this.menuLabel = new System.Windows.Forms.Label();
             this.Facultad = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.platosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.platosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.restaurantsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.FacultadImg.SuspendLayout();
             this.menuPanel.SuspendLayout();
+            this.contextMenuStrip2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -77,6 +92,7 @@ namespace ABRESPOL
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(34)))), ((int)(((byte)(63)))));
             this.panel2.Controls.Add(this.Title);
             this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.menuStrip1);
             this.panel2.Location = new System.Drawing.Point(-3, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1589, 140);
@@ -239,6 +255,94 @@ namespace ABRESPOL
             this.panel3.Size = new System.Drawing.Size(1082, 81);
             this.panel3.TabIndex = 1;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuToolStripMenuItem});
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(116, 28);
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.platosToolStripMenuItem,
+            this.agregarToolStripMenuItem});
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
+            this.menuToolStripMenuItem.Text = "Menu";
+            // 
+            // platosToolStripMenuItem
+            // 
+            this.platosToolStripMenuItem.Name = "platosToolStripMenuItem";
+            this.platosToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.platosToolStripMenuItem.Text = "Platos";
+            // 
+            // agregarToolStripMenuItem
+            // 
+            this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.agregarToolStripMenuItem.Text = "Agregar";
+            // 
+            // contextMenuStrip3
+            // 
+            this.contextMenuStrip3.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip3.Name = "contextMenuStrip3";
+            this.contextMenuStrip3.Size = new System.Drawing.Size(61, 4);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inicioToolStripMenuItem,
+            this.platosToolStripMenuItem1,
+            this.restaurantsToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1589, 28);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // inicioToolStripMenuItem
+            // 
+            this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
+            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
+            this.inicioToolStripMenuItem.Text = "Inicio";
+            // 
+            // platosToolStripMenuItem1
+            // 
+            this.platosToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarToolStripMenuItem1,
+            this.eliminarToolStripMenuItem});
+            this.platosToolStripMenuItem1.Name = "platosToolStripMenuItem1";
+            this.platosToolStripMenuItem1.Size = new System.Drawing.Size(61, 24);
+            this.platosToolStripMenuItem1.Text = "Platos";
+            // 
+            // restaurantsToolStripMenuItem
+            // 
+            this.restaurantsToolStripMenuItem.Name = "restaurantsToolStripMenuItem";
+            this.restaurantsToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
+            this.restaurantsToolStripMenuItem.Text = "Restaurants";
+            // 
+            // agregarToolStripMenuItem1
+            // 
+            this.agregarToolStripMenuItem1.Name = "agregarToolStripMenuItem1";
+            this.agregarToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.agregarToolStripMenuItem1.Text = "Agregar";
+            this.agregarToolStripMenuItem1.Click += new System.EventHandler(this.agregarToolStripMenuItem1_Click);
+            // 
+            // eliminarToolStripMenuItem
+            // 
+            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            // 
             // AssitMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -248,6 +352,7 @@ namespace ABRESPOL
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1600, 900);
             this.MinimumSize = new System.Drawing.Size(1600, 900);
@@ -258,9 +363,13 @@ namespace ABRESPOL
             this.Load += new System.EventHandler(this.AssitMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.FacultadImg.ResumeLayout(false);
             this.menuPanel.ResumeLayout(false);
             this.menuPanel.PerformLayout();
+            this.contextMenuStrip2.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -284,5 +393,17 @@ namespace ABRESPOL
         private Button button1;
         private Button addBtn;
         private Label label2;
+        private ContextMenuStrip contextMenuStrip1;
+        private ContextMenuStrip contextMenuStrip2;
+        private ToolStripMenuItem menuToolStripMenuItem;
+        private ToolStripMenuItem platosToolStripMenuItem;
+        private ToolStripMenuItem agregarToolStripMenuItem;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem inicioToolStripMenuItem;
+        private ToolStripMenuItem platosToolStripMenuItem1;
+        private ToolStripMenuItem agregarToolStripMenuItem1;
+        private ToolStripMenuItem eliminarToolStripMenuItem;
+        private ToolStripMenuItem restaurantsToolStripMenuItem;
+        private ContextMenuStrip contextMenuStrip3;
     }
 }
