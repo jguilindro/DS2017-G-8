@@ -15,6 +15,10 @@ namespace ABRESPOL
         public agregarPlatos()
         {
             InitializeComponent();
+            if (Program.persona.Rol == "Administrador") {
+                this.restaurantBox.ReadOnly = false;
+            }else
+                this.restaurantBox.Text = Program.persona.IdRestaurante;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -29,7 +33,11 @@ namespace ABRESPOL
             director.setPlatoBuilder(builder);
             director.construirPlato(textNombre.Text, descripcionBox.Text, float.Parse(textPrecio.Text), servidoBox.Text, tipoBox.Text, categoriasBox.Text, restaurantBox.Text);
 
-            StudentMain.platos.Add(director.getPlatillo());
+            Program.platos.Add(director.getPlatillo());
+
+            StudentMain student = new StudentMain();
+            student.Show();
+            this.Dispose();
         }
 
 

@@ -19,14 +19,8 @@ namespace ABRESPOL
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Login log = new Login();
-            log.Show();
             this.Dispose();
         }
 
-        private void Jamytafy_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            System.Windows.Forms.Application.Exit();
-        }
     }
 }

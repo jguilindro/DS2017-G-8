@@ -147,5 +147,11 @@ namespace ABRESPOL
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Jamytafy jamy = new Jamytafy();
+            jamy.ShowDialog();
+        }
     }
 }

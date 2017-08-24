@@ -76,7 +76,6 @@
             this.Name = "Jamytafy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jamytafy";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Jamytafy_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
