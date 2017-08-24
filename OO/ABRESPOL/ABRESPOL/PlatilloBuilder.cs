@@ -3,7 +3,7 @@ namespace ABRESPOL
 {
     public class PlatilloBuilder
     {
-        private Platillo Platillo;
+        private Platillo Platillo= new Platillo();
 
         public Platillo getPlatillo()
         {
