@@ -31,5 +31,10 @@ namespace ABRESPOL
         {
             this.Dispose();
         }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            Persona persona = new Persona(userText.Text, passText.Text, tipoPersona.Text);
+        }
     }
 }
