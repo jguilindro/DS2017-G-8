@@ -39,6 +39,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.descripcionBox = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,6 +76,9 @@
             // categoriasBox
             // 
             this.categoriasBox.FormattingEnabled = true;
+            this.categoriasBox.Items.AddRange(new object[] {
+            "Ejecutivo",
+            "Estudiantil"});
             this.categoriasBox.Location = new System.Drawing.Point(98, 324);
             this.categoriasBox.Name = "categoriasBox";
             this.categoriasBox.Size = new System.Drawing.Size(379, 24);
@@ -135,14 +140,38 @@
             this.descripcionBox.Location = new System.Drawing.Point(98, 536);
             this.descripcionBox.Multiline = true;
             this.descripcionBox.Name = "descripcionBox";
-            this.descripcionBox.Size = new System.Drawing.Size(379, 132);
+            this.descripcionBox.Size = new System.Drawing.Size(379, 95);
             this.descripcionBox.TabIndex = 10;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(98, 667);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(110, 35);
+            this.button2.TabIndex = 20;
+            this.button2.Text = "Cancelar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(34)))), ((int)(((byte)(63)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(367, 667);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 35);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // agregarPlatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 714);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.descripcionBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.restaurantBox);
@@ -174,5 +203,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox descripcionBox;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -30,6 +30,7 @@
         {
             this.Title = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.tipoPersona = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,7 +41,6 @@
             this.passText = new System.Windows.Forms.TextBox();
             this.addBtn = new System.Windows.Forms.Button();
             this.cancel = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +64,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(563, 142);
             this.panel2.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.Image = global::ABRESPOL.Properties.Resources.logo;
+            this.label1.Location = new System.Drawing.Point(32, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 109);
+            this.label1.TabIndex = 1;
             // 
             // tipoPersona
             // 
@@ -159,14 +167,7 @@
             this.cancel.TabIndex = 14;
             this.cancel.Text = "Cancelar";
             this.cancel.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.Image = global::ABRESPOL.Properties.Resources.logo;
-            this.label1.Location = new System.Drawing.Point(32, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 109);
-            this.label1.TabIndex = 1;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
             // agregarPersona
             // 

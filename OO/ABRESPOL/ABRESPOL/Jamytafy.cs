@@ -23,5 +23,10 @@ namespace ABRESPOL
             log.Show();
             this.Dispose();
         }
+
+        private void Jamytafy_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }

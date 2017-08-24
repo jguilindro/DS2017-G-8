@@ -41,6 +41,8 @@ namespace ABRESPOL
             this.agregarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restaurantsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.FacultadImg = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.addBtn = new System.Windows.Forms.Button();
@@ -59,8 +61,6 @@ namespace ABRESPOL
             this.platosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.agregarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -161,6 +161,19 @@ namespace ABRESPOL
             this.restaurantsToolStripMenuItem.Name = "restaurantsToolStripMenuItem";
             this.restaurantsToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
             this.restaurantsToolStripMenuItem.Text = "Restaurants";
+            // 
+            // agregarToolStripMenuItem2
+            // 
+            this.agregarToolStripMenuItem2.Name = "agregarToolStripMenuItem2";
+            this.agregarToolStripMenuItem2.Size = new System.Drawing.Size(138, 26);
+            this.agregarToolStripMenuItem2.Text = "Agregar";
+            this.agregarToolStripMenuItem2.Click += new System.EventHandler(this.agregarToolStripMenuItem2_Click);
+            // 
+            // eliminarToolStripMenuItem1
+            // 
+            this.eliminarToolStripMenuItem1.Name = "eliminarToolStripMenuItem1";
+            this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(138, 26);
+            this.eliminarToolStripMenuItem1.Text = "Eliminar";
             // 
             // FacultadImg
             // 
@@ -341,19 +354,6 @@ namespace ABRESPOL
             this.contextMenuStrip3.Name = "contextMenuStrip3";
             this.contextMenuStrip3.Size = new System.Drawing.Size(61, 4);
             // 
-            // agregarToolStripMenuItem2
-            // 
-            this.agregarToolStripMenuItem2.Name = "agregarToolStripMenuItem2";
-            this.agregarToolStripMenuItem2.Size = new System.Drawing.Size(181, 26);
-            this.agregarToolStripMenuItem2.Text = "Agregar";
-            this.agregarToolStripMenuItem2.Click += new System.EventHandler(this.agregarToolStripMenuItem2_Click);
-            // 
-            // eliminarToolStripMenuItem1
-            // 
-            this.eliminarToolStripMenuItem1.Name = "eliminarToolStripMenuItem1";
-            this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
-            this.eliminarToolStripMenuItem1.Text = "Eliminar";
-            // 
             // AssitMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -371,6 +371,7 @@ namespace ABRESPOL
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudentMain";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AssitMain_FormClosed);
             this.Load += new System.EventHandler(this.AssitMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

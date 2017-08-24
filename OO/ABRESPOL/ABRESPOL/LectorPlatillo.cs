@@ -33,10 +33,9 @@ namespace ABRESPOL
                     char[] delimitador = { ',' };
                     string[] palabras = lineas.Split(delimitador);
                     Platillo p = new Platillo();
-                    p.nombre = palabras[0];
-                    p.precio = palabras[1];
-                    p.descripcion = palabras[2];
-                    p.img = palabras[4];
+                    p.Nombre = palabras[0];
+                    p.Precio = float.Parse(palabras[1]);
+                    p.Descripcion = palabras[2];
 
                     Registros.Add(p);
                     lineas = lector.ReadLine();

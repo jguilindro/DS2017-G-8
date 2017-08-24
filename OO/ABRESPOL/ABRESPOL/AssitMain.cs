@@ -40,5 +40,15 @@ namespace ABRESPOL
             agregarRestaurant rest = new agregarRestaurant();
             rest.ShowDialog();
         }
+        void Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+                this.Dispose();
+        }
+
+        private void AssitMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }
