@@ -1,7 +1,7 @@
 ﻿using System;
 namespace ABRESPOL
 {
-    public abstract class PlatoBuilder
+    public abstract class PlatilloBuilder
     {
         private Platillo Platillo;
 
