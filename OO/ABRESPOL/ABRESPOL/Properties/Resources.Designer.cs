@@ -159,5 +159,18 @@ namespace ABRESPOL.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to fman, fran123
+        ///
+        ///dguizado, denise123
+        ///
+        ///Montero, maribel123.
+        /// </summary>
+        internal static string usuario {
+            get {
+                return ResourceManager.GetString("usuario", resourceCulture);
+            }
+        }
     }
 }
