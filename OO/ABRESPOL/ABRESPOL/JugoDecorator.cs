@@ -1,7 +1,7 @@
 ﻿using System;
 namespace ABRESPOL
 {
-    public class JugoDecorator
+    public class JugoDecorator: Platillo
     {
         private Platillo Platillo;
         private String Jugo;

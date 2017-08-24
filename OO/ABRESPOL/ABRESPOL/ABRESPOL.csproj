@@ -142,7 +142,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Restaurante.cs" />
-    <Compile Include="PagosDecorator.cs" />
     <Compile Include="Pagos.cs" />
     <Compile Include="CarnetDecorator.cs" />
     <Compile Include="CreditCardDecorator.cs" />
@@ -151,9 +150,8 @@
     <Compile Include="EjecutivoDecorator.cs" />
     <Compile Include="JugoDecorator.cs" />
     <Compile Include="PostreDecorator.cs" />
-    <Compile Include="PlatoBuilder.cs" />
-    <Compile Include="Plato.cs" />
-    <Compile Include="PlatoDirector.cs" />
+    <Compile Include="PlatilloBuilder.cs" />
+    <Compile Include="PlatilloDirector.cs" />
     <Compile Include="Facade.cs" />
     <Compile Include="PagarPorCarnet.cs" />
     <Compile Include="PagarPorCredito.cs" />

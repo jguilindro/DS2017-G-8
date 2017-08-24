@@ -1,10 +1,24 @@
 ﻿using System;
 namespace ABRESPOL
 {
-    public class EmptyClass
+    public class Pagos
     {
-        public EmptyClass()
+        private String nombresPagos;
+        public Pagos()
         {
+        }
+
+        public string NombresPagos
+        {
+            get
+            {
+                return nombresPagos;
+            }
+
+            set
+            {
+                nombresPagos = value;
+            }
         }
     }
 }

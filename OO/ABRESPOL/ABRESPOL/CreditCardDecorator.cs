@@ -1,22 +1,15 @@
 ﻿using System;
 namespace ABRESPOL
 {
-    public class CreditCardDecorator
+    public class CreditCardDecorator: Pagos
     {
-        int numero;
-        int CVC;
-        int Expire;
+        private Pagos pagos;
 
-        public CreditCardDecorator()
+        public CreditCardDecorator(Pagos pagos)
         {
+            this.pagos = pagos;
+            this.pagos.NombresPagos += "Pago por tarjeta de credito\n";
         }
 
-		public void realizarPago()
-		{
-		}
-
-		public void verificarSaldo()
-		{
-		}
     }
 }

@@ -1,9 +1,9 @@
 ﻿using System;
 namespace ABRESPOL
 {
-    public class PlatoDirector
+    public class PlatilloDirector
     {
-        private PlatoBuilder builder;
+        private PlatilloBuilder builder;
 
 
         public void construirPlato(String nombre, String descripcion, float precio, String servido, String tipo, int idCategoria, int idPlatillo, int idRestaurante)
@@ -12,12 +12,7 @@ namespace ABRESPOL
             this.builder.añadirIds(idCategoria, idPlatillo, idRestaurante);
         }
 
-        public PlatoDirector getPlato()
-        {
-            return null;
-        }
-
-        public void setPlatoBuilder(PlatoBuilder builder)
+        public void setPlatoBuilder(PlatilloBuilder builder)
         {
             this.builder = builder;
         }
